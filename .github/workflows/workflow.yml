@@ -22,10 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - run: echo "Job was triggered by event ${{ github.event_name }}"
-    - run: echo "This job has bin executed on runner with os ${{ runner.os }}"
-    - run: echo "Name of the branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
-    - run: echo "This job finished with status ${{ job.status }}"
+      - run: echo "Job was triggered by event ${{ github.event_name }}"
+      - run: echo "This job has bin executed on runner with os ${{ runner.os }}"
+      - run: echo "Name of the branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
+      - run: echo "This job finished with status ${{ job.status }}"
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
